@@ -1,0 +1,6 @@
+.image-info{
+  width:700rpx;
+  height:400rpx;
+  margin-left:25rpx;
+  margin-bottom: 10rpx;
+}

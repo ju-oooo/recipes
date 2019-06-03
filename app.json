@@ -1,13 +1,36 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/board/board",
+    "pages/classify/classify",
+    "pages/collection/collection",
+    "pages/details/details",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "减肥食谱",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/board/board",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

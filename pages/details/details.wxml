@@ -1,0 +1,15 @@
+<block wx:for="{{details}}" wx:for-item="recipes" wx:key="recipes">
+  <view>
+    <image class="image-info" src="{{recipes.img_url}}"></image>
+  </view>
+  <view class="page__hd">
+    <text class="page__title">{{recipes.title}}</text>
+    <text class="sub-title dotted">{{recipes.description}}</text>
+    <text class="materialL">食材</text>
+    <block wx:for="{{recipes.food_materialL}}" wx:for-item="food_materialL">
+      <text class="food_materialL">{{food_materialL}}</text>
+    </block>
+    <text class="materialL">烹饪步骤</text>
+    <text class="food_materialL">{{recipes.cooking_step}}</text>
+  </view>
+</block>

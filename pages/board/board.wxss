@@ -1,0 +1,33 @@
+.food_list {
+  width: 170px;
+  height: 275px;
+}
+
+.page__hd {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin: 0 20rpx;
+}
+
+.sub-title {
+  font-size: 30rpx;
+}
+
+.page {
+  display: flex;
+}
+
+.food_list_left {
+  margin: 20rpx 25rpx 20rpx;
+}
+
+.food_list_left {
+  margin-right: 23rpx;
+}
+
+.image-info {
+  width: 170px;
+  height: 170px;
+  background-color: #eee;
+}

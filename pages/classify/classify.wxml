@@ -1,0 +1,9 @@
+<block wx:for="{{recipesClassify}}" wx:for-item="recipes">
+<navigator url="../details/details">
+<view class="page">
+    <view class="food_list food_list_left">
+      <image class="image-info" src="{{recipes.img_url}}"></image>
+    </view>
+</view>
+</navigator>
+</block>
