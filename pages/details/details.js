@@ -21,7 +21,8 @@ Page({
   onLoad: function(options) {
     let temp = this.data.details;
     temp[0].food_materialL = temp[0].food_materialL.split("#");
-    this.setData({'details': temp})
+    temp[0].cooking_step=temp[0].cooking_step.split("#");
+    this.setData({ 'details': temp });
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

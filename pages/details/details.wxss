@@ -24,8 +24,14 @@ border-bottom: 1rpx dashed #a7a8a8;
   margin-bottom:30rpx;
 }
 .food_materialL{
-  width:200rpx;
-  text-align:center; 
-  font-size: 30rpx;
-  
+  font-size: 25rpx;
+  color:#666;
+  line-height: 50rpx;
+  text-align: center;
+}
+.cooking_step{
+  font-size: 25rpx;
+  margin-bottom:23rpx;
+  line-height: 45rpx;
+  color:#999;
 }

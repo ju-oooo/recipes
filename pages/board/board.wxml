@@ -1,16 +1,18 @@
+<view class="page">
+   <navigator url="../details/details">
+    <view class="food_list food_list_left">
+      <image style="height:300rpx;" class="image-info" src="{{recipesList[0].img_url}}"></image>
+      <view class="page__hd">
+        <text class="page__title">{{recipesList[0].title}}</text>
+        <text class="sub-title">{{recipesList[0].description}}</text>
+      </view>
+    </view>
+    </navigator>
+</view>
 <block wx:for="{{recipesList}}" wx:for-item="recipes"  wx:key="recipes">
 <view class="page">
    <navigator url="../details/details">
     <view class="food_list food_list_left">
-      <image class="image-info" src="{{recipes.img_url}}"></image>
-      <view class="page__hd">
-        <text class="page__title">{{recipes.title}}</text>
-        <text class="sub-title">{{recipes.description}}</text>
-      </view>
-    </view>
-    </navigator>
-    <navigator url="../details/details">
-    <view class="food_list food_list_right">
       <image class="image-info" src="{{recipes.img_url}}"></image>
       <view class="page__hd">
         <text class="page__title">{{recipes.title}}</text>

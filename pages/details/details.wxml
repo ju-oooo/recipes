@@ -10,6 +10,8 @@
       <text class="food_materialL">{{food_materialL}}</text>
     </block>
     <text class="materialL">烹饪步骤</text>
-    <text class="food_materialL">{{recipes.cooking_step}}</text>
+    <block wx:for="{{recipes.cooking_step}}" wx:for-item="cooking_step">
+      <text class="cooking_step">{{cooking_step}}</text>
+    </block>
   </view>
 </block>
