@@ -1,0 +1,25 @@
+.copyright{
+  display: flex;
+  flex-direction: column;
+}
+.copyright_first{
+  font-size: 28rpx;
+  font-family: 500;
+  color: gray;
+  padding: 4%;
+  margin: 5%;
+}
+.copyright_second>text{
+  display: block;
+  padding: 2% 5%;
+  margin: 0 5%;
+  font-family: 500;
+  font-size: 28rpx;
+  color: gray;
+}
+.copyright_second>text:first-child{
+  font-size: 30rpx;
+  font-family: 700;
+  color:rgba(0, 0, 0, 0.719);
+
+}

@@ -4,7 +4,9 @@
     "pages/cuisineType/cuisineType",
     "pages/cuisineTypeList/cuisineTypeList",
     "pages/collection/collection",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/personal/personal",
+    "pages/copyright/copyright"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,7 +31,7 @@
         "text": "收藏"
       },
       {
-        "pagePath": "pages/collection/collection",
+        "pagePath": "pages/personal/personal",
         "text": "我的"
       }
     ]
