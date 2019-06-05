@@ -1,20 +1,27 @@
 /* pages/personal/personal.wxss */
-/* pages/me/me.wxss */
-.personal_first{
-  background-color: #fff;
-  text-align: center;
+
+.personal {
+  padding: 0 20rpx;
 }
-.personal_second{
+
+.personal-info {
+  background-color: #fff;
+  text-align: left;
+  display: block;
+  padding: 0 15rpx;
+  margin-bottom: 30rpx;
+}
+
+.personal-other {
   display: flex;
   flex-direction: column;
   font-size: 28rpx;
-  padding: 4% 0%;
 }
-.personal_second text{
-  margin-bottom: 30rpx;
-  background-color: RGB(240, 240, 240);
+
+.personal-item {
+  border-bottom: 1rpx solid #ccc;
   display: block;
   height: 70rpx;
-  padding-left: 15rpx;
+  padding: 0 15rpx;
   line-height: 70rpx;
 }

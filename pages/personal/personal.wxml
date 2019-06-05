@@ -1,14 +1,15 @@
 <!--pages/personal/personal.wxml-->
 <!-- <text>pages/personal/personal.wxml</text> -->
 <view class='personal'>
-  <view class='personal_first'>
-  <navigator url="../index/index">我的个人中心</navigator>
-    
+  <view class='personal-info'>
+    <text bindtap='_login'>
+      登录
+    </text>
   </view>
-  <view class='personal_second'>
+  <view class='personal-other'>
     <navigator url="../copyright/copyright">
-    <text>版权声明</text>
+      <text class='personal-item'>版权声明</text>
     </navigator>
-    <text>设置</text>
+    <text class='personal-item'>其他</text>
   </view>
 </view>
