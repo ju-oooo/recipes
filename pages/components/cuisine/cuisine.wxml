@@ -1,0 +1,24 @@
+<view>
+  <view wx:if="{{index==0}}" class="cuisine" >
+    <navigator url="../details/details?id={{recipes.id}}">
+      <view class="food">
+        <image class="image-info-o" src="{{recipes.img_url}}"></image>
+        <view class="cuisine-head">
+          <text class="cuisine-title">{{recipes.title}}</text>
+          <text class="sub-title">{{recipes.description}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view wx:else class="cuisine">
+    <navigator url="../details/details?id={{recipes.id}}">
+      <view class="food">
+        <image class="image-info" src="{{recipes.img_url}}"></image>
+        <view class="cuisine-head">
+          <text class="cuisine-title">{{recipes.title}}</text>
+          <text class="sub-title">{{recipes.description}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

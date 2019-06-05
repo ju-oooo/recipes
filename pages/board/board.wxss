@@ -1,0 +1,6 @@
+.cuisine-list {
+  width: 100%;
+  column-count: 2;
+  margin: 0 auto;
+  column-gap: 10rpx;
+}

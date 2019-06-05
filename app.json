@@ -1,13 +1,38 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/board/board",
+    "pages/cuisineType/cuisineType",
+    "pages/cuisineTypeList/cuisineTypeList",
+    "pages/collection/collection",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "123456",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "减肥食谱",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 50,
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/board/board",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/cuisineType/cuisineType",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

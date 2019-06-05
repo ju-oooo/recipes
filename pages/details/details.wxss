@@ -1,0 +1,46 @@
+.image-info {
+  width: 750rpx;
+  margin-bottom: 50rpx;
+}
+
+.details-head {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin: 0 20rpx;
+}
+
+.details-title {
+}
+
+.sub-title {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color: #999;
+}
+
+.dotted {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx dashed #a7a8a8;
+}
+
+.material {
+  font-size: 40rpx;
+  margin-top: 25rpx;
+  margin-bottom: 30rpx;
+}
+
+.food-material {
+  font-size: 25rpx;
+  color: #666;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.cooking-step {
+  font-size: 25rpx;
+  margin-bottom: 23rpx;
+  line-height: 45rpx;
+  color: #999;
+}

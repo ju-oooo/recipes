@@ -1,0 +1,5 @@
+<view class='cuisine-list'>
+  <block wx:for="{{recipesList}}" wx:for-item="recipes" wx:key="index">
+    <cuisine index="{{index}}" recipes="{{recipes}}"></cuisine>
+  </block>
+</view>

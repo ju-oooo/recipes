@@ -1,0 +1,7 @@
+<block wx:for="{{cuisineTypeList}}" wx:for-item="cuisineType">
+  <navigator url="../cuisineTypeList/cuisineTypeList?typeId={{cuisineType.id}}">
+    <view class="cuisineType">
+      <image class="image-info" src="{{cuisineType.img_url}}"></image>
+    </view>
+  </navigator>
+</block>
