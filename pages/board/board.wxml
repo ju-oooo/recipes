@@ -1,7 +1,8 @@
+<view class='page-list'>
 <view class="page">
    <navigator url="../details/details">
     <view class="food_list food_list_left">
-      <image style="height:300rpx;" class="image-info" src="{{recipesList[0].img_url}}"></image>
+      <image class="image-info-o" src="{{recipesList[0].img_url}}"></image>
       <view class="page__hd">
         <text class="page__title">{{recipesList[0].title}}</text>
         <text class="sub-title">{{recipesList[0].description}}</text>
@@ -10,7 +11,7 @@
     </navigator>
 </view>
 <block wx:for="{{recipesList}}" wx:for-item="recipes"  wx:key="recipes">
-<view class="page">
+  <!-- <view class="page">
    <navigator url="../details/details">
     <view class="food_list food_list_left">
       <image class="image-info" src="{{recipes.img_url}}"></image>
@@ -20,5 +21,7 @@
       </view>
     </view>
     </navigator>
-</view>
+  </view> -->
+  <component class="component" id="component"></component>
 </block>
+</view>

@@ -1,0 +1,28 @@
+.page {
+  display: flex;
+  width: 50%;
+}
+
+.page__hd {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.sub-title {
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  line-height: 40rpx;
+  color: #999;
+}
+
+
+.image-info {
+  width: 340rpx;
+  height: 340rpx;
+  background-color: #eee;
+  border-radius: 15rpx;
+}
+.component{
+  width:50%;
+}

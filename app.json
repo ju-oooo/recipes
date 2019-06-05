@@ -3,8 +3,7 @@
     "pages/board/board",
     "pages/classify/classify",
     "pages/collection/collection",
-    "pages/details/details",
-    "pages/index/index"
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",

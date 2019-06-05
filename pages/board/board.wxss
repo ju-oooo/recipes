@@ -1,3 +1,8 @@
+.page-list{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+}
 .page__hd {
   display: flex;
   flex-direction: column;
@@ -14,14 +19,10 @@
 .page {
   display: flex;
   width: 50%;
-  float: left;
 }
 
 .food_list_left {
   margin: 20rpx;
-}
-
-.food_list_left {
   margin-right: 23rpx;
 }
 
@@ -31,3 +32,10 @@
   background-color: #eee;
   border-radius: 15rpx;
 }
+.image-info-o {
+  width:100%;
+  background-color: #eee;
+  border-radius: 15rpx;
+  height:260rpx;
+}
+
