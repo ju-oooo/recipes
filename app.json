@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/personal/personal",
     "pages/board/board",
     "pages/cuisineType/cuisineType",
     "pages/cuisineTypeList/cuisineTypeList",
     "pages/collection/collection",
     "pages/details/details",
-    "pages/personal/personal",
     "pages/copyright/copyright"
   ],
   "window": {

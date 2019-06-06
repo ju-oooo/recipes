@@ -1,15 +1,22 @@
 <!--pages/personal/personal.wxml-->
-<!-- <text>pages/personal/personal.wxml</text> -->
 <view class='personal'>
   <view class='personal-info'>
-    <text bindtap='_login'>
-      登录
-    </text>
+    <button wx:if="{{userInfo === null}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <!-- <text wx:if="{{userInfo === null}}" open-type="getUserInfo" bindtap='_login'></text> -->
+    <view wx:else class='info-left'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='info-right'>
+      <text>{{userInfo.nickName}}</text>
+      <text class='info-gender'>{{userInfo.gender==1?'男':userInfo.gender==2?'女':'未知'}}</text>
+    </view>
   </view>
+
   <view class='personal-other'>
     <navigator url="../copyright/copyright">
       <text class='personal-item'>版权声明</text>
     </navigator>
+
     <text class='personal-item'>其他</text>
   </view>
 </view>

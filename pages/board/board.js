@@ -22,7 +22,7 @@ Page({
       title: '加载中',
     })
     wx.request({
-      url: 'http://localhost:5159/cuisine',
+      url: 'http://127.233.2.40:5159/cuisine',
       data: {
         "count": this.data.count,
         "pageNum": this.data.pageNum,

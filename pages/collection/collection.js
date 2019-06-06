@@ -34,6 +34,7 @@ Page({
             title: '暂无此数据',
             icon:'none'
           })
+          return;
         }
         let recipesList = res.data.recipesList;
         this.setData({
