@@ -35,8 +35,19 @@ Page({
       },
       method: 'POST',
       success: (res) => {
-        console.log(res.data)
-        let recipesList = this.data.recipesList.concat(res.data.cuisineList);
+        let length = this.data.recipesList.length;
+        let recipesList = this.data.recipesList;
+        if (length > 0) {
+          res.data.cuisineList.slice(0, this.data.count / 2).forEach((elem, index) => {
+            recipesList.splice(length / 2 - 1 + index, 0, elem)
+          });
+          res.data.cuisineList.slice(this.data.count / 2).forEach((elem) => {
+            recipesList.push(elem)
+          });
+        } else {
+          recipesList = this.data.recipesList.concat(res.data.cuisineList)
+        }
+
         this.setData({
           'recipesList': recipesList,
           'pageNum': ++this.data.pageNum
@@ -78,10 +89,10 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    console.log(1232312)
     this.setData({
       'pageNum': 1
     });
+    this.setData({ 'recipesList': [] })
     this._getRecipesList();
   },
 
