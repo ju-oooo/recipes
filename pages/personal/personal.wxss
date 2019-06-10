@@ -11,6 +11,9 @@ page {
   padding: 30rpx 35rpx ;
   justify-content: flex-start;
 }
+.btn-login{
+  color:#00AE66;
+}
 
 .info-left image {
   width: 140rpx;

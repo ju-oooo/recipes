@@ -1,0 +1,26 @@
+.register {
+  margin: 40rpx 35rpx;
+}
+
+.register-item {
+  border-bottom: 1px solid #d1d1d1;
+  margin: 20rpx 0;
+  font-size: 30rpx;
+  padding: 30rpx;
+  overflow: hidden;
+}
+
+button {
+  border-radius: 0;
+  margin-top: 80rpx;
+  background: #00ae66;
+  border: none;
+  color: white;
+}
+
+.login-btn {
+  font-size: 30rpx;
+  color: #00ae66;
+  float: right;
+  margin-top: 20rpx;
+}

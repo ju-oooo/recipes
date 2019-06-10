@@ -1,14 +1,13 @@
 <!--pages/personal/personal.wxml-->
 <view class='personal'>
   <view class='personal-info'>
-    <button wx:if="{{userInfo === null}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <navigator wx:if="{{userInfo === null}}" url="../login/login" class='btn-login'>立即登录</navigator>
     <!-- <text wx:if="{{userInfo === null}}" open-type="getUserInfo" bindtap='_login'></text> -->
     <view wx:else class='info-left'>
       <image src='{{userInfo.avatarUrl}}'></image>
     </view>
     <view class='info-right'>
       <text>{{userInfo.nickName}}</text>
-      <text class='info-gender'>{{userInfo.gender==1?'男':userInfo.gender==2?'女':'未知'}}</text>
     </view>
   </view>
 

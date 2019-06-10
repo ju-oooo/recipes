@@ -1,0 +1,14 @@
+<view class="register">
+  <view class="register-item">
+    <input placeholder="请输入手机号" type="text"></input>
+  </view>
+  <view class="register-item">
+    <input placeholder="请输入密码" type="password"></input>
+  </view>
+  <button>注 册</button>
+  <view class="login-btn">
+    <navigator url="../login/login">
+      <text>用户登录</text>
+    </navigator>
+  </view>
+</view>

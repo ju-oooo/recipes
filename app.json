@@ -6,7 +6,9 @@
     "pages/cuisineTypeList/cuisineTypeList",
     "pages/collection/collection",
     "pages/details/details",
-    "pages/copyright/copyright"
+    "pages/copyright/copyright",
+    "pages/login/login",
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",
