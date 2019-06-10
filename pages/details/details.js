@@ -1,4 +1,5 @@
 // pages/details/details.js
+const app = getApp();
 Page({
 
   /**
@@ -20,7 +21,7 @@ Page({
       title: '加载中',
     })
     wx.request({
-      url: 'http://localhost:5159/cuisine/details',
+      url: app.globalData.URL + '/cuisine/details',
       data: {
         "id": id
       },

@@ -1,4 +1,5 @@
 // pages/classify/classify.js
+const app = getApp();
 Page({
 
   /**
@@ -18,7 +19,7 @@ Page({
       title: '加载中',
     })
     wx.request({
-      url: 'http://localhost:5159/cuisineType/',
+      url: app.globalData.URL +'/cuisineType',
       header: {
         "Content-Type": "application/x-www-form-urlencoded"
       },

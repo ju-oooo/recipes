@@ -1,4 +1,5 @@
 // pages/cuisineTypeList/cuisineTypeList.js
+const app = getApp();
 Page({
 
   /**
@@ -24,7 +25,7 @@ Page({
       title: '加载中',
     })
     wx.request({
-      url: 'http://localhost:5159/cuisine/type',
+      url: app.globalData.URL +'/cuisine/type',
       data: {
         "count": this.data.count,
         "pageNum": this.data.pageNum,

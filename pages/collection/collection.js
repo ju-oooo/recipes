@@ -1,4 +1,5 @@
 // pages/board/board.js
+const app = getApp();
 Page({
 
   /**
@@ -13,7 +14,7 @@ Page({
    */
   onLoad: function() {
     wx.login({
-      
+
     })
     this._getRecipesList();
   },
@@ -23,23 +24,29 @@ Page({
       title: '加载中'
     });
     wx.request({
-      url: 'http://localhost:5159/collect/',
+      url: app.globalData.URL +'/collect',
+      data: {
+        userId: 1001
+      },
       header: {
         "Content-Type": "application/x-www-form-urlencoded"
       },
       method: 'POST',
       success: (res) => {
-        if(res.data.code===404){
+        // console.log(wx.globalData.userInfo)
+       
+        if (res.data.code === 404) {
           wx.showToast({
             title: '暂无此数据',
-            icon:'none'
+            icon: 'none'
           })
-          return;
+
+        } else {
+          let recipesList = res.data.cuisineList;
+          this.setData({
+            'recipesList': recipesList
+          })
         }
-        let recipesList = res.data.recipesList;
-        this.setData({
-          'recipesList': recipesList
-        })
         wx.hideLoading();
       }
     });

@@ -1,6 +1,6 @@
 // pages/board/board.js
+const app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -22,7 +22,7 @@ Page({
       title: '加载中',
     })
     wx.request({
-      url: 'http://176.233.2.40:5159/cuisine',
+      url: app.globalData.URL+'/cuisine',
       data: {
         "count": this.data.count,
         "pageNum": this.data.pageNum,

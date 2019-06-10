@@ -12,6 +12,7 @@ page {
   justify-content: flex-start;
 }
 .btn-login{
+  font-size: 44rpx;
   color:#00AE66;
 }
 

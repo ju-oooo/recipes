@@ -1,13 +1,13 @@
 <view class="register">
   <view class="register-item">
-    <input placeholder="请输入手机号" type="text"></input>
+    <input placeholder="请输入手机号" type="text" auto-focus data-name='username' value='{{username}}' bindinput='inputedit'></input>
   </view>
   <view class="register-item">
-    <input placeholder="请输入密码" type="password"></input>
+    <input placeholder="请输入密码" type="password" auto-focus data-name='password' value='{{password}}' bindinput='inputedit'></input>
   </view>
-  <button>注 册</button>
+  <button bindtap='register'>注 册</button>
   <view class="login-btn">
-    <navigator url="../login/login">
+    <navigator open-type="redirect" url="../login/login">
       <text>用户登录</text>
     </navigator>
   </view>

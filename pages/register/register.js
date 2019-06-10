@@ -1,11 +1,28 @@
 // pages/register/register.js
 Page({
-
+  // 获取更新input值
+  inputedit: function (e) {
+    console.log(e)
+    let _this = this;
+    let dataset = e.currentTarget.dataset;
+    let name = dataset.name;
+    let value = e.detail.value;
+    _this.data[name] = value
+    this.setData({
+      name: _this.data[name]
+    })
+  }, 
+   // 执行注册方法
+  _login: function () {
+    console.log(this.data.username)
+    console.log(this.data.password)
+  },
   /**
    * 页面的初始数据
    */
   data: {
-
+    username: '',
+    password: ''
   },
 
   /**
