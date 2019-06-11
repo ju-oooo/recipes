@@ -36,6 +36,9 @@ Page({
           wx.showToast({
             title: '暂无此数据',
             icon: 'none'
+          });
+          this.setData({
+            'recipesList': null
           })
         } else {
           let recipesList = res.data.cuisineList;
