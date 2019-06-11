@@ -36,6 +36,7 @@ App({
   globalData: {
     userInfo: null,
     //设置全局请求URL
-    URL: 'http://192.168.1.20:5159'
+    // URL: 'http://192.168.1.20:5159'
+    URL: 'http://192.168.123.1:5159'
   }
 })

@@ -1,4 +1,5 @@
 // pages/login/login.js
+const app = getApp();
 Page({
   // 获取更新input值
   inputedit: function(e) {
@@ -13,9 +14,48 @@ Page({
     })
   },
   // 执行登录方法
-  _login: function() {
-    console.log(this.data.username)
-    console.log(this.data.password)
+  _login: function(e) {
+    let username = this.data.username
+    let password = this.data.password
+    if (!username || !password) {
+      wx.showToast({
+        title: '用户名或密码格式有误',
+        icon: 'none'
+      });
+      return;
+    }
+    wx.showLoading({
+      title: '正在登陆'
+    });
+    wx.request({
+      url: app.globalData.URL + '/user/login',
+      data: {
+        "phone": username,
+        "password": password
+      },
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      method: 'POST',
+      success: (res) => {
+        wx.hideLoading();
+        let data = res.data;
+        if (data.code === 200) {
+          wx.showToast({
+            title: '登陆成功',
+            icon: 'success',
+            duration: 2000
+          });
+        } else {
+          wx.showToast({
+            title: '用户名或密码有误',
+            icon: 'none',
+            duration:2000
+          });
+        }
+        
+      }
+    });
   },
   /**
    * 页面的初始数据

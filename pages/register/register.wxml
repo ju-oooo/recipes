@@ -5,7 +5,7 @@
   <view class="register-item">
     <input placeholder="请输入密码" type="password" auto-focus data-name='password' value='{{password}}' bindinput='inputedit'></input>
   </view>
-  <button bindtap='register'>注 册</button>
+  <button bindtap='_register'>注 册</button>
   <view class="login-btn">
     <navigator open-type="redirect" url="../login/login">
       <text>用户登录</text>

@@ -42,12 +42,10 @@ Page({
           res.data.cuisineList.slice(this.data.count / 2).forEach((elem) => {
             recipesList.push(elem)
           });
-
         } else {
           recipesList = this.data.recipesList.concat(res.data.cuisineList)
 
         }
-
         this.setData({
           'recipesList': recipesList,
           'pageNum': ++this.data.pageNum
