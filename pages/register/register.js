@@ -47,6 +47,9 @@ Page({
             icon: 'success',
             duration: 2000
           });
+          wx.redirectTo({
+            url: '../login/login'
+          });
         } else {
           wx.showToast({
             title: '注册失败',

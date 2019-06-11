@@ -1,6 +1,6 @@
 <view class="login">
   <view class="login-item">
-    <input placeholder="请输入手机号" type="text" auto-focus data-name='username' value='{{username}}' bindinput='inputedit'></input>
+    <input placeholder="请输入手机号" type="number" focus maxlength="11" data-name='username' value='{{username}}' bindinput='inputedit'></input>
   </view>
   <view class="login-item">
     <input placeholder="密码" type="password" data-name='password' value='{{password}}' bindinput='inputedit'></input>

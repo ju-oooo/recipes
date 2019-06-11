@@ -4,10 +4,10 @@
     <navigator wx:if="{{userInfo === null}}" url="../login/login" class='btn-login'>立即登录</navigator>
     <!-- <text wx:if="{{userInfo === null}}" open-type="getUserInfo" bindtap='_login'></text> -->
     <view wx:else class='info-left'>
-      <image src='{{userInfo.avatarUrl}}'></image>
+      <image src='{{url+"/image/user/"+userInfo.portrait}}'></image>
     </view>
     <view class='info-right'>
-      <text>{{userInfo.nickName}}</text>
+      <text>{{userInfo.nickname}}</text>
     </view>
   </view>
 

@@ -1,9 +1,9 @@
 <view class="register">
   <view class="register-item">
-    <input placeholder="请输入手机号" type="text" auto-focus data-name='username' value='{{username}}' bindinput='inputedit'></input>
+    <input placeholder="请输入手机号"  type="number" focus maxlength="11"  data-name='username' value='{{username}}' bindinput='inputedit'></input>
   </view>
   <view class="register-item">
-    <input placeholder="请输入密码" type="password" auto-focus data-name='password' value='{{password}}' bindinput='inputedit'></input>
+    <input placeholder="请输入密码" type="password" data-name='password' value='{{password}}' bindinput='inputedit'></input>
   </view>
   <button bindtap='_register'>注 册</button>
   <view class="login-btn">

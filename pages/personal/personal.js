@@ -6,16 +6,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: null
+    userInfo: null,
+    url:app.globalData.URL
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function(options) {
+   
   },
- 
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -28,7 +28,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    console.log("2222", app.globalData.userInfo)
+    if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: app.globalData.userInfo
+      })
+      // http://localhost:5159/image/user/jf-user-0.jpg
+    }
   },
 
   /**

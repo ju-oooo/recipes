@@ -46,14 +46,18 @@ Page({
             icon: 'success',
             duration: 2000
           });
+          app.globalData.userInfo = data.result;
+          wx.switchTab({
+            url: '../personal/personal'
+          });
         } else {
           wx.showToast({
             title: '用户名或密码有误',
             icon: 'none',
-            duration:2000
+            duration: 2000
           });
         }
-        
+
       }
     });
   },
@@ -61,8 +65,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username: '',
-    password: ''
+    username: '18329776240',
+    password: '1234567890'
   },
 
   /**

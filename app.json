@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/personal/personal",
     "pages/board/board",
     "pages/cuisineType/cuisineType",
+    "pages/personal/personal",
     "pages/cuisineTypeList/cuisineTypeList",
     "pages/collection/collection",
     "pages/details/details",
