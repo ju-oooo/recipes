@@ -6,48 +6,45 @@ Page({
    * 页面的初始数据
    */
   data: {
-    recipesList: []
+    recipesList: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function() {
-    wx.login({
 
-    })
-    this._getRecipesList();
   },
-  // 加在首页数据
+  // 加载收藏数据
   _getRecipesList: function() {
     wx.showLoading({
       title: '加载中'
     });
     wx.request({
-      url: app.globalData.URL +'/collect',
+      url: app.globalData.URL + '/collect',
       data: {
-        userId: 1001
+        userId: app.globalData.userInfo.id
       },
       header: {
         "Content-Type": "application/x-www-form-urlencoded"
       },
       method: 'POST',
       success: (res) => {
-        // console.log(wx.globalData.userInfo)
-       
+        
+        wx.hideLoading();
         if (res.data.code === 404) {
           wx.showToast({
             title: '暂无此数据',
             icon: 'none'
           })
-
         } else {
           let recipesList = res.data.cuisineList;
+          console.log(recipesList)
           this.setData({
             'recipesList': recipesList
           })
         }
-        wx.hideLoading();
+
       }
     });
   },
@@ -63,7 +60,19 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    if (app.globalData.userInfo) {
+      this._getRecipesList();
+    } else {
+      wx.showToast({
+        title: '请登录',
+        icon: 'none'
+      })
+      setTimeout(() => {
+        wx.switchTab({
+          url: '/pages/board/board'
+        })
+      }, 1500);
+    }
   },
 
   /**

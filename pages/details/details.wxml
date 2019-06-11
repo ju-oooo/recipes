@@ -1,15 +1,20 @@
 <view>
   <image class="image-info" src="{{details.img_url}}"></image>
   <view class="details-head">
-    <text class="details-title">{{details.title}}</text>
-    <text class="sub-title dotted">{{details.description}}</text>
+    <view class='details-tit'>
+      <text class="details-title">{{details.title}}</text>
+      <text class="details-star" bindtap='_changeCollect'>star</text>
+    </view>
+    <text class="sub-title">{{details.description}}</text>
+    <text class='dotted'></text>
     <text class="material">食材</text>
     <block wx:for="{{details.food_material}}" wx:for-item="food_material" wx:key="index">
       <text class="food-material">{{food_material}}</text>
     </block>
+    <text class='dotted'></text>
     <text class="material">烹饪步骤</text>
     <block wx:for="{{details.cooking_step}}" wx:for-item="cooking_step" wx:key="index">
-      <text class="cooking_step">{{cooking_step}}</text>
+      <text class="cooking-step">{{index+1+"/"+details.cooking_step.length+" "}}{{cooking_step}}</text>
     </block>
   </view>
 </view>

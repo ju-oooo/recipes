@@ -7,14 +7,20 @@ Page({
    */
   data: {
     userInfo: null,
-    url:app.globalData.URL
+    url: app.globalData.URL
   },
-
+  // 注销
+  _logout: function() {
+    app.globalData.userInfo = null;
+    this.setData({
+      userInfo:null
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-   
+
   },
 
   /**

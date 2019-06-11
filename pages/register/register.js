@@ -44,7 +44,7 @@ Page({
         if (data.code === 200) {
           wx.showToast({
             title: '注册成功',
-            icon: 'success',
+            icon: 'none',
             duration: 2000
           });
           wx.redirectTo({
@@ -53,7 +53,7 @@ Page({
         } else {
           wx.showToast({
             title: '注册失败',
-            icon: 'success',
+            icon: 'none',
             duration: 2000
           });
         }
