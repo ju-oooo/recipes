@@ -22,19 +22,27 @@
     "list": [
       {
         "pagePath": "pages/board/board",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye.png"
       },
       {
         "pagePath": "pages/cuisineType/cuisineType",
-        "text": "分类"
+        "text": "分类",
+        "iconPath": "images/fenlei.png",
+        "selectedIconPath": "images/fenlei.png"
       },
       {
         "pagePath": "pages/collection/collection",
-        "text": "收藏"
+        "text": "收藏",
+        "iconPath": "images/liebiao.png",
+        "selectedIconPath": "images/liebiao.png"
       },
       {
         "pagePath": "pages/personal/personal",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode.png"
       }
     ]
   },
