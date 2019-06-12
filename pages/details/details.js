@@ -36,14 +36,12 @@ Page({
       },
       method: 'POST',
       success: (res) => {
-        console.log(res.data);
         let details = res.data.details;
         details.food_material = details.food_material.split("#");
         details.cooking_step = details.cooking_step.split("#");
         this.setData({
           'details': details,
         })
-        console.log(res.data.star)
         // 检测是否存在于我的收藏
         if (res.data.star) {
           this.setData({

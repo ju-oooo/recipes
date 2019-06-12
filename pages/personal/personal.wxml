@@ -17,6 +17,6 @@
     <navigator url="../copyright/copyright">
       <text class='personal-item'>版权声明</text>
     </navigator>
-    <text class='personal-item'>其他</text>
+    <text bindtap='_more' class='personal-item'>其他</text>
   </view>
 </view>

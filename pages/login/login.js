@@ -3,7 +3,6 @@ const app = getApp();
 Page({
   // 获取更新input值
   inputedit: function(e) {
-    console.log(e)
     let _this = this;
     let dataset = e.currentTarget.dataset;
     let name = dataset.name;

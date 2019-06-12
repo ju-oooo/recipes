@@ -22,7 +22,7 @@ Page({
       title: '加载中',
     })
     wx.request({
-      url: app.globalData.URL+'/cuisine',
+      url: app.globalData.URL + '/cuisine',
       data: {
         "count": this.data.count,
         "pageNum": this.data.pageNum,
@@ -88,9 +88,7 @@ Page({
    */
   onPullDownRefresh: function() {
     this.setData({
-      'pageNum': 1
-    });
-    this.setData({
+      'pageNum': 1,
       'recipesList': []
     })
     this._getRecipesList();

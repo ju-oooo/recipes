@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/welcome/welcome",
     "pages/board/board",
     "pages/cuisineType/cuisineType",
     "pages/personal/personal",
@@ -11,13 +12,16 @@
     "pages/register/register"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "减肥食谱",
     "navigationBarTextStyle": "black",
     "onReachBottomDistance": 50
   },
   "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#87DE47",
     "list": [
       {
         "pagePath": "pages/board/board",

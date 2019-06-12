@@ -9,12 +9,28 @@ Page({
     userInfo: null,
     url: app.globalData.URL
   },
-  // 注销
-  _logout: function() {
-    app.globalData.userInfo = null;
-    this.setData({
-      userInfo:null
+  // 更多功能敬请期待
+  _more: function() {
+    wx.showToast({
+      title: '敬请期待',
+      icon:"none"
     })
+  }, // 注销
+  _logout: function() {
+    let _this = this;
+    wx.showModal({
+      title: '温馨提示',
+      content: '确认要注销么？',
+      success: function(res) {
+        if (res.confirm) {
+          app.globalData.userInfo = null;
+          _this.setData({
+            userInfo: null
+          })
+        }
+      }
+    });
+
   },
   /**
    * 生命周期函数--监听页面加载
@@ -34,7 +50,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    console.log("2222", app.globalData.userInfo)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo
