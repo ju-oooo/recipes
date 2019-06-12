@@ -19,7 +19,8 @@
 }
 
 .details-star {
-  width: 10%;
+  width: 40rpx;
+  height: 40rpx;
   padding: 0 10rpx;
 }
 
