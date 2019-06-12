@@ -15,8 +15,7 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "减肥食谱",
     "navigationBarTextStyle": "black",
-    "onReachBottomDistance": 50,
-    "enablePullDownRefresh": true
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "list": [
