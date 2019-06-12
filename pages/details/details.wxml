@@ -3,7 +3,7 @@
   <view class="details-head">
     <view class='details-tit'>
       <text class="details-title">{{details.title}}</text>
-      <text class="details-star" bindtap='_changeCollect'>star</text>
+      <image src="{{star?'../../images/shoucang_o.png':'../../images/shoucang.png'}}" class="details-star" bindtap='_changeCollect'></image>
     </view>
     <text class="sub-title">{{details.description}}</text>
     <text class='dotted'></text>

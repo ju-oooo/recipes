@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "cuisine": "../components/cuisine/cuisine"
-  }
+  },
+  "enablePullDownRefresh": true
 }

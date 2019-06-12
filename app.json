@@ -15,26 +15,33 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "减肥食谱",
     "navigationBarTextStyle": "black",
-    "onReachBottomDistance": 50,
-    "enablePullDownRefresh": true
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/board/board",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "images/zhuye.png",
+        "selectedIconPath": "images/zhuye_o.png"
       },
       {
         "pagePath": "pages/cuisineType/cuisineType",
-        "text": "分类"
+        "text": "分类",
+        "iconPath": "images/fenlei.png",
+        "selectedIconPath": "images/fenlei_o.png"
       },
       {
         "pagePath": "pages/collection/collection",
-        "text": "收藏"
+        "text": "收藏",
+        "iconPath": "images/shoucangjia.png",
+        "selectedIconPath": "images/shoucangjia_o.png"
       },
       {
         "pagePath": "pages/personal/personal",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode_o.png"
       }
     ]
   },
