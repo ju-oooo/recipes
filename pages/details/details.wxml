@@ -1,5 +1,5 @@
 <view>
-  <image class="image-info" src="{{details.img_url}}"></image>
+  <image mode="widthFix" class="image-info" src="{{details.img_url}}"></image>
   <view class="details-head">
     <view class='details-tit'>
       <text class="details-title">{{details.title}}</text>
