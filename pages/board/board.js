@@ -37,7 +37,7 @@ Page({
         let recipesList = this.data.recipesList;
         if (length > 0) {
           res.data.cuisineList.slice(0, this.data.count / 2).forEach((elem, index) => {
-            recipesList.splice(length / 2 - 1 + index, 0, elem)
+            recipesList.splice(length / 2 + index, 0, elem)
           });
           res.data.cuisineList.slice(this.data.count / 2).forEach((elem) => {
             recipesList.push(elem)
@@ -50,6 +50,7 @@ Page({
           'recipesList': recipesList,
           'pageNum': ++this.data.pageNum
         })
+        // console.log(recipesList)
         wx.hideLoading();
       }
     })

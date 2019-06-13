@@ -2,7 +2,7 @@
   <view wx:if="{{index==0}}" class="cuisine" >
     <navigator url="../details/details?id={{recipes.id}}">
       <view class="food">
-        <image lazy-load='true' class="image-info-o" src="{{recipes.img_url}}"></image>
+        <image lazy-load='true' mode='aspectFill' class="image-info-o" src="{{recipes.img_url}}"></image>
         <view class="cuisine-head">
           <text class="cuisine-title">{{recipes.title}}</text>
           <text class="sub-title">{{recipes.description}}</text>
@@ -13,7 +13,7 @@
   <view wx:else class="cuisine">
     <navigator url="../details/details?id={{recipes.id}}">
       <view class="food">
-        <image lazy-load='true' class="image-info" src="{{recipes.img_url}}"></image>
+        <image lazy-load='true' mode='aspectFill' class="image-info" src="{{recipes.img_url}}"></image>
         <view class="cuisine-head">
           <text class="cuisine-title">{{recipes.title}}</text>
           <text class="sub-title">{{recipes.description}}</text>
