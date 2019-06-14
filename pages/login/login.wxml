@@ -3,7 +3,7 @@
     <input placeholder="请输入手机号" type="number" focus maxlength="11" data-name='username' value='{{username}}' bindinput='inputedit'></input>
   </view>
   <view class="login-item">
-    <input placeholder="密码" type="password" data-name='password' value='{{password}}' bindinput='inputedit'></input>
+    <input placeholder="密码" type="password" minlength="6" maxlength="16" data-name='password' value='{{password}}' bindinput='inputedit'></input>
   </view>
   <button bindtap='_login'>登 录</button>
   <view class="register-btn">
